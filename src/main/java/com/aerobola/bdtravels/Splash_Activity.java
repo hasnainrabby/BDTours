@@ -30,7 +30,7 @@ public class Splash_Activity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent intent=new Intent(Splash_Activity.this,MainActivity.class);
+                Intent intent = new Intent(Splash_Activity.this, FirstPage.class);
                 startActivity(intent);
                 finish();
 

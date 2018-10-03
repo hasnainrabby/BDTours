@@ -1,9 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
     tools:context=".FirstPage">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".30"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/KeyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:text="বিভিন্ন বিভাগের দর্শনীয় স্থান সমূহ"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".90"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDha"
+            style="@style/KeyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_shape"
+            android:text="ঢাকা"
+            android:textColor="@color/white"
+            android:textSize="31sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnChittagong"
+            style="@style/KeyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_shape"
+            android:text="চট্টগ্রাম"
+            android:textColor="@color/white"
+            android:textSize="31sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".90"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnKhulna"
+            style="@style/KeyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_shape"
+            android:text="খুলনা"
+            android:textColor="@color/white"
+            android:textSize="31sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRajsahi"
+            style="@style/KeyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_shape"
+            android:text="রাজশাহী"
+            android:textColor="@color/white"
+            android:textSize="31sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".90"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSylhet"
+            style="@style/KeyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_shape"
+            android:text="সিলেট"
+            android:textColor="@color/white"
+            android:textSize="31sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnBarisal"
+            style="@style/KeyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_shape"
+            android:text="বরিশাল"
+            android:textColor="@color/white"
+            android:textSize="31sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".90"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRangpur"
+            style="@style/KeyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_shape"
+            android:text="রংপুর"
+            android:textColor="@color/white"
+            android:textSize="31sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnMymensing"
+            style="@style/KeyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_shape"
+            android:text="ময়মনসিংহ"
+            android:textColor="@color/white"
+            android:textSize="31sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

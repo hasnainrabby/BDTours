@@ -18,7 +18,7 @@ public class Splash_Activity extends AppCompatActivity {
             public void run() {
                 splash2();
             }
-        },3500);
+        }, 2000);
     }
 
 

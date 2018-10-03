@@ -9,9 +9,12 @@
     <color name="turquoise">#2f81ab</color>
     <color name="green">#24b160</color>
     <color name="blue">#3498db</color>
+    <color name="skyblue">#87ceeb</color>
     <color name="purple">#9b59b6</color>
+    <color name="lightpurple">#cd58fd</color>
     <color name="white">#ffffff</color>
     <color name="gray">#c1bebe</color>
+    <color name="brown">#515d69</color>
     <color name="offblack">#151516</color>
 
 </resources>

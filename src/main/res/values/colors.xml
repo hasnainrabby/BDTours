@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#3498db</color>
     <color name="colorAccent">#FF4081</color>
     <color name="red">#e74c3c</color>
     <color name="orange">#e67e22</color>
@@ -9,6 +9,7 @@
     <color name="turquoise">#2f81ab</color>
     <color name="green">#24b160</color>
     <color name="blue">#3498db</color>
+    <color name="darkblue">#0c2333</color>
     <color name="skyblue">#87ceeb</color>
     <color name="purple">#9b59b6</color>
     <color name="lightpurple">#cd58fd</color>

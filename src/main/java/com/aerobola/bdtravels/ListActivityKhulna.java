@@ -15,7 +15,7 @@ public class ListActivityKhulna extends AppCompatActivity {
     private ArrayList<Integer> mImages_urls = new ArrayList<>();
     private ArrayList<String> mImage_names = new ArrayList<>();
     private ArrayList<String> mImage_detail = new ArrayList<>();
-    private ArrayList<String> mImage_activity = new ArrayList<>();
+    private ArrayList<Integer> mImage_activity = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class ListActivityKhulna extends AppCompatActivity {
         mImages_urls.add(R.drawable.sundorban);
         mImage_names.add("সুন্দরবন");
         mImage_detail.add("খুলনা,বাগেরহাট।");
-        mImage_activity.add("Sundarban");
+        mImage_activity.add(1);
 
 
 

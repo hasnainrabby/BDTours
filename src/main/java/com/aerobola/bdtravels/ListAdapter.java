@@ -1,6 +1,7 @@
 package com.aerobola.bdtravels;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -19,13 +20,16 @@ public abstract class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewH
     private ArrayList<Integer> mImages = new ArrayList<>();
     private ArrayList<String> mImage_names = new ArrayList<>();
     private ArrayList<String> mImage_detail = new ArrayList<>();
+    private ArrayList<String> mImage_activity = new ArrayList<>();
     private Context mContext;
 
-    public ListAdapter(Context mContext, ArrayList<Integer> mImages, ArrayList<String> mImage_names, ArrayList<String> mImage_detail) {
+
+    public ListAdapter(Context mContext, ArrayList<Integer> mImages, ArrayList<String> mImage_names, ArrayList<String> mImage_detail, ArrayList<String> mImage_activity) {
         this.mImages = mImages;
         this.mImage_names = mImage_names;
         this.mImage_detail = mImage_detail;
         this.mContext = mContext;
+        this.mImage_activity = mImage_activity;
     }
 
     @NonNull
@@ -47,6 +51,7 @@ public abstract class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewH
             public void onClick(View view) {
                 Toast.makeText(mContext, mImage_names.get(position), Toast.LENGTH_SHORT).show();
             }
+
         });
     }
 

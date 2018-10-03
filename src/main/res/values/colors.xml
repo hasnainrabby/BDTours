@@ -17,5 +17,6 @@
     <color name="gray">#c1bebe</color>
     <color name="brown">#515d69</color>
     <color name="offblack">#151516</color>
+    <color name="black">#000000</color>
 
 </resources>

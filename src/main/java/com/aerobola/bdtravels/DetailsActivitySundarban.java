@@ -8,17 +8,21 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.support.v7.widget.Toolbar;
 
+import com.ms.square.android.expandabletextview.ExpandableTextView;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
 
 public class DetailsActivitySundarban extends AppCompatActivity {
     CarouselView carouselView;
-    TextView tvDetail, tvHeadline;
+    ExpandableTextView etvIntro, etvKivabeJaben, etvKivabePousaben, etvKothaiThakben, etvKiKhaben, etvVromonTips;
+    TextView tvIntro, tvKivabeJaben, tvKivabePousaben, tvKothaiThakben, tvKiKhaben, tvVromonTips;
     int[] sampleImages = {
             R.drawable.sundarban_1,
             R.drawable.sundarban_2,
@@ -36,48 +40,136 @@ public class DetailsActivitySundarban extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_details);
 
-        tvHeadline = findViewById(R.id.tvHeadline);
-        tvHeadline.setMovementMethod(new ScrollingMovementMethod());
-        String data = "";
-        StringBuffer stringBuffer = new StringBuffer();
-        InputStream is = this.getResources().openRawResource(R.raw.sundarban_hl);
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is));
-        if (is != null) {
-            try {
-                while ((data = bufferedReader.readLine()) != null) {
-                    stringBuffer.append(data + "\n");
-                }
-                tvDetail.setText(stringBuffer);
-                is.close();
-            } catch (Exception e) {
+        //expandable intro read from text file
 
-                e.printStackTrace();
+        etvIntro = findViewById(R.id.etvIntro);
+        tvIntro = (TextView) etvIntro.findViewById(R.id.expandable_text);
 
+        InputStream inputStream = getResources().openRawResource(R.raw.sundarban_intro);
+
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+
+        int i;
+        try {
+            i = inputStream.read();
+            while (i != -1) {
+                byteArrayOutputStream.write(i);
+                i = inputStream.read();
             }
+            inputStream.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
+        etvIntro.setText(byteArrayOutputStream.toString());
 
 
-        tvDetail = findViewById(R.id.tvDetails);
-        tvDetail.setMovementMethod(new ScrollingMovementMethod());
-        //String data = "";
-        //StringBuffer stringBuffer=new StringBuffer();
-        is = this.getResources().openRawResource(R.raw.sundarban);
-        bufferedReader = new BufferedReader(new InputStreamReader(is));
-        if (is != null) {
-            try {
-                while ((data = bufferedReader.readLine()) != null) {
-                    stringBuffer.append(data + "\n");
-                }
-                tvDetail.setText(stringBuffer);
-                is.close();
-            } catch (Exception e) {
+        //expandable kivabe jaben read from text file
+        etvKivabeJaben = findViewById(R.id.etvKivabeJaben);
+        tvKivabeJaben = (TextView) etvKivabeJaben.findViewById(R.id.expandable_text);
 
-                e.printStackTrace();
+        inputStream = getResources().openRawResource(R.raw.sundarban_kivabejaben);
 
+        byteArrayOutputStream = new ByteArrayOutputStream();
+
+        try {
+            i = inputStream.read();
+            while (i != -1) {
+                byteArrayOutputStream.write(i);
+                i = inputStream.read();
             }
+            inputStream.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
+        etvKivabeJaben.setText(byteArrayOutputStream.toString());
+
+        //expandable kivabe pousaben read from text file
+        etvKivabePousaben = findViewById(R.id.etvKivabePousaben);
+        tvKivabePousaben = (TextView) etvKivabePousaben.findViewById(R.id.expandable_text);
+
+        inputStream = getResources().openRawResource(R.raw.sundarban_kivabepousaben);
+
+        byteArrayOutputStream = new ByteArrayOutputStream();
+
+        try {
+            i = inputStream.read();
+            while (i != -1) {
+                byteArrayOutputStream.write(i);
+                i = inputStream.read();
+            }
+            inputStream.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        etvKivabePousaben.setText(byteArrayOutputStream.toString());
+
+        //expandable kothai thakben read from text file
+        etvKothaiThakben = findViewById(R.id.etvKothaiThakben);
+        tvKothaiThakben = (TextView) etvKothaiThakben.findViewById(R.id.expandable_text);
+
+        inputStream = getResources().openRawResource(R.raw.sundarban_kothaithakben);
+
+        byteArrayOutputStream = new ByteArrayOutputStream();
+
+        try {
+            i = inputStream.read();
+            while (i != -1) {
+                byteArrayOutputStream.write(i);
+                i = inputStream.read();
+            }
+            inputStream.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        etvKothaiThakben.setText(byteArrayOutputStream.toString());
+
+        //expandable ki khaben read from text file
+        etvKiKhaben = findViewById(R.id.etvKiKhaben);
+        tvKiKhaben = (TextView) etvKiKhaben.findViewById(R.id.expandable_text);
+
+        inputStream = getResources().openRawResource(R.raw.sundarban_khabar);
+
+        byteArrayOutputStream = new ByteArrayOutputStream();
+
+        try {
+            i = inputStream.read();
+            while (i != -1) {
+                byteArrayOutputStream.write(i);
+                i = inputStream.read();
+            }
+            inputStream.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        etvKiKhaben.setText(byteArrayOutputStream.toString());
+
+        //expandable vromon tips read from text file
+        etvVromonTips = findViewById(R.id.etvVromonTips);
+        tvVromonTips = (TextView) etvVromonTips.findViewById(R.id.expandable_text);
+
+        inputStream = getResources().openRawResource(R.raw.sundarban_vromontips);
+
+        byteArrayOutputStream = new ByteArrayOutputStream();
+
+        try {
+            i = inputStream.read();
+            while (i != -1) {
+                byteArrayOutputStream.write(i);
+                i = inputStream.read();
+            }
+            inputStream.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        etvVromonTips.setText(byteArrayOutputStream.toString());
 
 
         Toolbar toolbar = findViewById(R.id.toolBar);

@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:src="@drawable/bdt" />
+        android:src="@drawable/bdtours" />
 
     <TextView
         android:id="@+id/editText"
@@ -17,12 +17,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="70dp"
         android:gravity="center"
-        android:text="Bangladesh Travels"
+        android:text="BD Tours"
         android:textAllCaps="false"
-        android:textColor="#2f8732"
-        android:textSize="40sp"
+        android:textColor="#206922"
+        android:textSize="50sp"
         android:textStyle="bold" />
 
 </RelativeLayout>

@@ -7,10 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class FirstPage extends AppCompatActivity {
 
-    Button buttonKhulna;
+    Button buttonKhulna, buttonDhaka;
 
     public Dialog mDialog;
     public Button mDialogyes, mDialogno;
@@ -23,6 +24,7 @@ public class FirstPage extends AppCompatActivity {
         createDialog();
 
         buttonKhulna = findViewById(R.id.btnKhulna);
+        buttonDhaka = findViewById(R.id.btnDhaka);
 
 
         buttonKhulna.setOnClickListener(new View.OnClickListener() {
@@ -36,6 +38,18 @@ public class FirstPage extends AppCompatActivity {
 
 
         );
+        buttonDhaka.setOnClickListener(new View.OnClickListener() {
+
+
+                                           @Override
+                                           public void onClick(View view) {
+                                               startActivity(new Intent(FirstPage.this, ListActivityDhaka.class));
+                                           }
+                                       }
+
+
+        );
+
     }
 
     private void createDialog() {

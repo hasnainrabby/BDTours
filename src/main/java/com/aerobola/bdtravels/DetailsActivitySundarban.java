@@ -24,11 +24,11 @@ public class DetailsActivitySundarban extends AppCompatActivity {
     ExpandableTextView etvIntro, etvKivabeJaben, etvKivabePousaben, etvKothaiThakben, etvKiKhaben, etvVromonTips;
     TextView tvIntro, tvKivabeJaben, tvKivabePousaben, tvKothaiThakben, tvKiKhaben, tvVromonTips;
     int[] sampleImages = {
-            R.drawable.sundarban_1,
-            R.drawable.sundarban_2,
-            R.drawable.sundarban_3,
-            R.drawable.sundarban_4,
-            R.drawable.sundarban_5
+            R.drawable.sundarban1,
+            R.drawable.sundarban2,
+            R.drawable.sundarban3,
+            R.drawable.sundarban4,
+            R.drawable.sundarban7
     };
     ImageListener imageListener = new ImageListener() {
         @Override
@@ -41,6 +41,10 @@ public class DetailsActivitySundarban extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
+
+        TextView toolBarTitle;
+        toolBarTitle = findViewById(R.id.toolBarTitle);
+        toolBarTitle.setText("---সুন্দরবন---");
 
         //expandable intro read from text file
 

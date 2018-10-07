@@ -37,7 +37,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnDha"
+            android:id="@+id/btnDhaka"
             style="@style/KeyStyle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -25,10 +25,33 @@ public class ListActivityKhulna extends AppCompatActivity {
     }
 
     private void InitImageBitmaps() {
-        mImages_urls.add(R.drawable.sundorban);
+        mImages_urls.add(R.drawable.sundarban2);
         mImage_names.add("সুন্দরবন");
         mImage_detail.add("খুলনা,বাগেরহাট।");
         mImage_activity.add(1);
+
+
+        mImages_urls.add(R.drawable.kuthibari1);
+        mImage_names.add("কুঠিবাড়ী");
+        mImage_detail.add("শিলাইদাহ,কুষ্টিয়া।");
+        mImage_activity.add(2);
+
+
+        mImages_urls.add(R.drawable.shat_gombuj4);
+        mImage_names.add("ষাট গম্বুজ মসজিদ");
+        mImage_detail.add("বাগেরহাট");
+        mImage_activity.add(3);
+
+        mImages_urls.add(R.drawable.mujibnagar6);
+        mImage_names.add("মুজিবনগর");
+        mImage_detail.add("মুজিবনগর,মেহেরপুর।");
+        mImage_activity.add(4);
+
+        mImages_urls.add(R.drawable.mujibnagar6);
+        mImage_names.add("লালন শাহের মাজার");
+        mImage_detail.add("ছেউড়িয়া,কুমারখালী,কুষ্টিয়া।");
+        mImage_activity.add(5);
+
 
 
 

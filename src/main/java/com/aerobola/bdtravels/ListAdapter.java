@@ -42,18 +42,52 @@ public abstract class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewH
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
         Glide.with(mContext).asBitmap().load(mImages.get(position)).into(holder.image);
         holder.image_name.setText(mImage_names.get(position));
         holder.image_detail.setText(mImage_detail.get(position));
         holder.parent_layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(mContext, mImage_names.get(position), Toast.LENGTH_SHORT).show();
-                if (mImage_activity.get(position) == 1) {
+                Toast.makeText(mContext, mImage_names.get(holder.getAdapterPosition()), Toast.LENGTH_SHORT).show();
+                if (mImage_activity.get(holder.getAdapterPosition()) == 1) {
                     Intent intent = new Intent(mContext, DetailsActivitySundarban.class);
                     mContext.startActivity(intent);
                 }
+                if (mImage_activity.get(holder.getAdapterPosition()) == 2) {
+                    Intent intent = new Intent(mContext, DetailsActivityKuthibari.class);
+                    mContext.startActivity(intent);
+                }
+                if (mImage_activity.get(holder.getAdapterPosition()) == 3) {
+                    Intent intent = new Intent(mContext, DetailsActivityShatGombujMashjid.class);
+                    mContext.startActivity(intent);
+                }
+                if (mImage_activity.get(holder.getAdapterPosition()) == 4) {
+                    Intent intent = new Intent(mContext, DetailsActivityMujibNagor.class);
+                    mContext.startActivity(intent);
+                }
+                if (mImage_activity.get(holder.getAdapterPosition()) == 5) {
+                    Intent intent = new Intent(mContext, DetailsActivityLalon.class);
+                    mContext.startActivity(intent);
+                }
+
+                //Dhaka
+
+                if (mImage_activity.get(holder.getAdapterPosition()) == 11) {
+                    Intent intent = new Intent(mContext, DetailsActivityAhsanMonjil.class);
+                    mContext.startActivity(intent);
+                }
+
+                if (mImage_activity.get(holder.getAdapterPosition()) == 12) {
+                    Intent intent = new Intent(mContext, DetailsActivityHosniDalan.class);
+                    mContext.startActivity(intent);
+                }
+
+                if (mImage_activity.get(holder.getAdapterPosition()) == 13) {
+                    Intent intent = new Intent(mContext, DetailsActivityLalbagKella.class);
+                    mContext.startActivity(intent);
+                }
+
             }
 
         });

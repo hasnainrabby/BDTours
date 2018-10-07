@@ -19,7 +19,15 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".FirstPage" />
         <activity android:name=".ListActivityKhulna" />
-        <activity android:name=".DetailsActivitySundarban"></activity>
+        <activity android:name=".ListActivityDhaka" />
+        <activity android:name=".DetailsActivitySundarban" />
+        <activity android:name=".DetailsActivityShatGombujMashjid" />
+        <activity android:name=".DetailsActivityMujibNagor" />
+        <activity android:name=".DetailsActivityLalon" />
+        <activity android:name=".DetailsActivityAhsanMonjil" />
+        <activity android:name=".DetailsActivityHosniDalan" />
+        <activity android:name=".DetailsActivityLalbagKella" />
+        <activity android:name=".DetailsActivityKuthibari"></activity>
     </application>
 
 </manifest>

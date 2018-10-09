@@ -47,7 +47,7 @@ public class ListActivityKhulna extends AppCompatActivity {
         mImage_detail.add("মুজিবনগর,মেহেরপুর।");
         mImage_activity.add(4);
 
-        mImages_urls.add(R.drawable.mujibnagar6);
+        mImages_urls.add(R.drawable.lalon1);
         mImage_names.add("লালন শাহের মাজার");
         mImage_detail.add("ছেউড়িয়া,কুমারখালী,কুষ্টিয়া।");
         mImage_activity.add(5);

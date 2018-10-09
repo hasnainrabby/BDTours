@@ -20,11 +20,10 @@ public class DetailsActivityLalon extends AppCompatActivity {
     ExpandableTextView etvIntro, etvKivabeJaben, etvKivabePousaben, etvKothaiThakben, etvKiKhaben, etvVromonTips;
     TextView tvIntro, tvKivabeJaben, tvKivabePousaben, tvKothaiThakben, tvKiKhaben, tvVromonTips;
     int[] sampleImages = {
-            R.drawable.shat_gombuj2,
-            R.drawable.shat_gombuj4,
-            R.drawable.shat_gombuj5,
-            R.drawable.shat_gombuj6,
-            R.drawable.shat_gombuj7
+            R.drawable.lalon1,
+            R.drawable.lalon4,
+            R.drawable.lalon6,
+            R.drawable.lalon7
     };
     ImageListener imageListener = new ImageListener() {
         @Override
@@ -40,7 +39,7 @@ public class DetailsActivityLalon extends AppCompatActivity {
 
         TextView toolBarTitle;
         toolBarTitle = findViewById(R.id.toolBarTitle);
-        toolBarTitle.setText("---লালন শাহের মাজার---");
+        toolBarTitle.setText("*** লালন শাহের মাজার ***");
 
         //expandable intro read from text file
 

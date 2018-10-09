@@ -19,11 +19,11 @@ public class DetailsActivityHosniDalan extends AppCompatActivity {
     ExpandableTextView etvIntro, etvKivabeJaben, etvKivabePousaben, etvKothaiThakben, etvKiKhaben, etvVromonTips;
     TextView tvIntro, tvKivabeJaben, tvKivabePousaben, tvKothaiThakben, tvKiKhaben, tvVromonTips;
     int[] sampleImages = {
-            R.drawable.shat_gombuj2,
-            R.drawable.shat_gombuj4,
-            R.drawable.shat_gombuj5,
-            R.drawable.shat_gombuj6,
-            R.drawable.shat_gombuj7
+            R.drawable.hossain_dalan1,
+            R.drawable.hossain_dalan2,
+            R.drawable.hossain_dalan5,
+            R.drawable.hossain_dalan7,
+            R.drawable.hossain_dalan8
     };
     ImageListener imageListener = new ImageListener() {
         @Override
@@ -39,7 +39,7 @@ public class DetailsActivityHosniDalan extends AppCompatActivity {
 
         TextView toolBarTitle;
         toolBarTitle = findViewById(R.id.toolBarTitle);
-        toolBarTitle.setText("---হোসেনি দালান---");
+        toolBarTitle.setText("*** হোসেনি দালান ***");
 
         //expandable intro read from text file
 

@@ -40,7 +40,7 @@ public class DetailsActivityShatGombujMashjid extends AppCompatActivity {
 
         TextView toolBarTitle;
         toolBarTitle = findViewById(R.id.toolBarTitle);
-        toolBarTitle.setText("---ষাট গম্বুজ মসজিদ---");
+        toolBarTitle.setText("*** ষাট গম্বুজ মসজিদ ***");
 
         //expandable intro read from text file
 

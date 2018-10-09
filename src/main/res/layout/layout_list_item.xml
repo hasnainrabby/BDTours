@@ -28,7 +28,7 @@
             android:gravity="center_horizontal"
             android:text="Image Name"
             android:textColor="#000"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
 
         <TextView

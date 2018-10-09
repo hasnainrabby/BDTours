@@ -22,19 +22,19 @@ public class ListActivityDhaka extends AppCompatActivity {
     }
 
     private void InitImageBitmaps() {
-        mImages_urls.add(R.drawable.sundarban2);
+        mImages_urls.add(R.drawable.ahsan_monjil1);
         mImage_names.add("আহসান মঞ্জিল");
         mImage_detail.add("পুরান ঢাকার ইসলামপুর।");
         mImage_activity.add(11);
 
 
-        mImages_urls.add(R.drawable.kuthibari1);
+        mImages_urls.add(R.drawable.hossain_dalan1);
         mImage_names.add("হোসেনি দালান");
         mImage_detail.add("পুরান ঢাকা।");
         mImage_activity.add(12);
 
 
-        mImages_urls.add(R.drawable.shat_gombuj4);
+        mImages_urls.add(R.drawable.lalbag1);
         mImage_names.add("লালবাগ কেল্লা");
         mImage_detail.add("পুরান ঢাকার লালবাগ।");
         mImage_activity.add(13);

@@ -40,7 +40,7 @@ public class DetailsActivityKuthibari extends AppCompatActivity {
 
         TextView toolBarTitle;
         toolBarTitle = findViewById(R.id.toolBarTitle);
-        toolBarTitle.setText("---কুঠিবাড়ী---");
+        toolBarTitle.setText("*** কুঠিবাড়ী ***");
 
         //expandable intro read from text file
 

@@ -11,7 +11,8 @@ import android.widget.ImageView;
 
 public class FirstPage extends AppCompatActivity {
 
-    Button buttonKhulna, buttonDhaka;
+    Button buttonKhulna, buttonDhaka,buttonRajshahi,buttonBarisal,buttonChittagong
+            ,buttonRangpur,buttonSylhet,buttonMymanshing;
 
     public Dialog mDialog;
     public Button mDialogyes, mDialogno;
@@ -25,6 +26,13 @@ public class FirstPage extends AppCompatActivity {
 
         buttonKhulna = findViewById(R.id.btnKhulna);
         buttonDhaka = findViewById(R.id.btnDhaka);
+        buttonBarisal=findViewById(R.id.btnBarisal);
+        buttonRajshahi=findViewById(R.id.btnRajsahi);
+        buttonChittagong=findViewById(R.id.btnChittagong);
+        buttonRangpur=findViewById(R.id.btnRangpur);
+        buttonSylhet=findViewById(R.id.btnSylhet);
+        buttonMymanshing=findViewById(R.id.btnMymensing);
+
 
 
         buttonKhulna.setOnClickListener(new View.OnClickListener() {
@@ -46,6 +54,76 @@ public class FirstPage extends AppCompatActivity {
                                                startActivity(new Intent(FirstPage.this, ListActivityDhaka.class));
                                            }
                                        }
+
+
+        );
+        buttonBarisal.setOnClickListener(new View.OnClickListener() {
+
+
+                                           @Override
+                                           public void onClick(View view) {
+                                               startActivity(new Intent(FirstPage.this, ListActivityBarisal.class));
+                                           }
+                                       }
+
+
+        );
+        buttonRajshahi.setOnClickListener(new View.OnClickListener() {
+
+
+                                           @Override
+                                           public void onClick(View view) {
+                                               startActivity(new Intent(FirstPage.this, ListActivityRajshahi.class));
+                                           }
+                                       }
+
+
+        );
+
+        buttonChittagong.setOnClickListener(new View.OnClickListener() {
+
+
+                                              @Override
+                                              public void onClick(View view) {
+                                                  startActivity(new Intent(FirstPage.this, ListActivityChittagong.class));
+                                              }
+                                          }
+
+
+        );
+
+        buttonRangpur.setOnClickListener(new View.OnClickListener() {
+
+
+                                                @Override
+                                                public void onClick(View view) {
+                                                    startActivity(new Intent(FirstPage.this, ListActivityRangpur.class));
+                                                }
+                                            }
+
+
+        );
+
+        buttonSylhet.setOnClickListener(new View.OnClickListener() {
+
+
+                                             @Override
+                                             public void onClick(View view) {
+                                                 startActivity(new Intent(FirstPage.this, ListActivitySylhet.class));
+                                             }
+                                         }
+
+
+        );
+
+        buttonMymanshing.setOnClickListener(new View.OnClickListener() {
+
+
+                                             @Override
+                                             public void onClick(View view) {
+                                                 startActivity(new Intent(FirstPage.this, ListActivityMymensingh.class));
+                                             }
+                                         }
 
 
         );

@@ -50,6 +50,7 @@ public abstract class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewH
             @Override
             public void onClick(View view) {
                 Toast.makeText(mContext, mImage_names.get(holder.getAdapterPosition()), Toast.LENGTH_SHORT).show();
+               //Khulna
                 if (mImage_activity.get(holder.getAdapterPosition()) == 1) {
                     Intent intent = new Intent(mContext, DetailsActivitySundarban.class);
                     mContext.startActivity(intent);
@@ -87,6 +88,122 @@ public abstract class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewH
                     Intent intent = new Intent(mContext, DetailsActivityLalbagKella.class);
                     mContext.startActivity(intent);
                 }
+                if (mImage_activity.get(holder.getAdapterPosition()) == 21) {
+                    Intent intent = new Intent(mContext, DetailsActivityBaghamosjid.class);
+                    mContext.startActivity(intent);
+                }
+                if (mImage_activity.get(holder.getAdapterPosition()) == 22) {
+                    Intent intent = new Intent(mContext, DetailsActivityPuthiaRajbari.class);
+                    mContext.startActivity(intent);
+                }
+                //Barisal
+                if (mImage_activity.get(holder.getAdapterPosition()) == 31) {
+                    Intent intent = new Intent(mContext, DetailsActivitySatla.class);
+                    mContext.startActivity(intent);
+                }
+                if (mImage_activity.get(holder.getAdapterPosition()) == 32) {
+                    Intent intent = new Intent(mContext, DetailsActivityGutiamosjid.class);
+                    mContext.startActivity(intent);
+                }
+                if (mImage_activity.get(holder.getAdapterPosition()) == 33) {
+                    Intent intent = new Intent(mContext, DetailsActivityDurgasagor.class);
+                    mContext.startActivity(intent);
+                }
+
+                //Rangpur
+                if (mImage_activity.get(holder.getAdapterPosition()) == 41) {
+                    Intent intent = new Intent(mContext, DetailsActivityKantojir.class);
+                    mContext.startActivity(intent);
+                }
+                if (mImage_activity.get(holder.getAdapterPosition()) == 42) {
+                    Intent intent = new Intent(mContext, DetailsActivitySopnopuri.class);
+                    mContext.startActivity(intent);
+                }
+                if (mImage_activity.get(holder.getAdapterPosition()) == 43) {
+                    Intent intent = new Intent(mContext, DetailsActivityTajhat.class);
+                    mContext.startActivity(intent);
+                }
+                //Chittagong
+                if (mImage_activity.get(holder.getAdapterPosition()) == 71) {
+                    Intent intent = new Intent(mContext, DetailsActivityBashbariya.class);
+                    mContext.startActivity(intent);
+                }
+                if (mImage_activity.get(holder.getAdapterPosition()) == 72) {
+                    Intent intent = new Intent(mContext, DetailsActivityKhoiyachora.class);
+                    mContext.startActivity(intent);
+                }
+                if (mImage_activity.get(holder.getAdapterPosition()) == 73) {
+                    Intent intent = new Intent(mContext, DetailsActivityPotenga.class);
+                    mContext.startActivity(intent);
+                }
+                if (mImage_activity.get(holder.getAdapterPosition()) == 74) {
+                    Intent intent = new Intent(mContext,DetailsActivityShitakundu.class);
+                    mContext.startActivity(intent);
+                }
+                if (mImage_activity.get(holder.getAdapterPosition()) == 75) {
+                    Intent intent = new Intent(mContext, DetailsActivityChandranath.class);
+                    mContext.startActivity(intent);
+                }
+                if (mImage_activity.get(holder.getAdapterPosition()) == 76) {
+                    Intent intent = new Intent(mContext, DetailsActivityFoysLake.class);
+                    mContext.startActivity(intent);
+                }
+                if (mImage_activity.get(holder.getAdapterPosition()) == 77) {
+                    Intent intent = new Intent(mContext, DetailsActivityBogalek.class);
+                    mContext.startActivity(intent);
+                }
+                if (mImage_activity.get(holder.getAdapterPosition()) == 78) {
+                    Intent intent = new Intent(mContext, DetailsActivityNilachol.class);
+                    mContext.startActivity(intent);
+                }
+
+                if (mImage_activity.get(holder.getAdapterPosition()) == 79) {
+                    Intent intent = new Intent(mContext, DetailsActivityNilgiri.class);
+                    mContext.startActivity(intent);
+                }
+
+//Sylhet
+                if (mImage_activity.get(holder.getAdapterPosition()) ==60)  {
+                    Intent intent = new Intent(mContext, DetailsActivityBisanakandi.class);
+                    mContext.startActivity(intent);
+                }
+
+                if (mImage_activity.get(holder.getAdapterPosition()) == 61) {
+                    Intent intent = new Intent(mContext, DetailsActivityJaflong.class);
+                    mContext.startActivity(intent);
+                }
+
+                if (mImage_activity.get(holder.getAdapterPosition()) == 62) {
+                    Intent intent = new Intent(mContext, DetailsActivityLalakhal.class);
+                    mContext.startActivity(intent);
+                }
+
+                if (mImage_activity.get(holder.getAdapterPosition()) == 63) {
+                    Intent intent = new Intent(mContext, DetailsActivityPanthumai.class);
+                    mContext.startActivity(intent);
+                }
+
+                if (mImage_activity.get(holder.getAdapterPosition()) == 64) {
+                    Intent intent = new Intent(mContext, DetailsActivityRatargul.class);
+                    mContext.startActivity(intent);
+                }
+
+//Mymonshing
+                if (mImage_activity.get(holder.getAdapterPosition()) == 80) {
+                    Intent intent = new Intent(mContext, DetailsActivityBirishiri.class);
+                    mContext.startActivity(intent);
+                }
+
+                if (mImage_activity.get(holder.getAdapterPosition()) == 81) {
+                    Intent intent = new Intent(mContext, DetailsActivityGojni.class);
+                    mContext.startActivity(intent);
+                }
+
+                if (mImage_activity.get(holder.getAdapterPosition()) == 82) {
+                    Intent intent = new Intent(mContext, DetailsActivityModhutila.class);
+                    mContext.startActivity(intent);
+                }
+
 
             }
 

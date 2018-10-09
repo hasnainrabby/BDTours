@@ -19,11 +19,11 @@ public class DetailsActivityLalbagKella extends AppCompatActivity {
     ExpandableTextView etvIntro, etvKivabeJaben, etvKivabePousaben, etvKothaiThakben, etvKiKhaben, etvVromonTips;
     TextView tvIntro, tvKivabeJaben, tvKivabePousaben, tvKothaiThakben, tvKiKhaben, tvVromonTips;
     int[] sampleImages = {
-            R.drawable.shat_gombuj2,
-            R.drawable.shat_gombuj4,
-            R.drawable.shat_gombuj5,
-            R.drawable.shat_gombuj6,
-            R.drawable.shat_gombuj7
+            R.drawable.lalbag1,
+            R.drawable.lalbag2,
+            R.drawable.lalbag3,
+            R.drawable.lalbag4,
+            R.drawable.lalbag5
     };
     ImageListener imageListener = new ImageListener() {
         @Override
@@ -39,7 +39,7 @@ public class DetailsActivityLalbagKella extends AppCompatActivity {
 
         TextView toolBarTitle;
         toolBarTitle = findViewById(R.id.toolBarTitle);
-        toolBarTitle.setText("---লালবাগ কেল্লা---");
+        toolBarTitle.setText("*** লালবাগ কেল্লা ***");
 
         //expandable intro read from text file
 

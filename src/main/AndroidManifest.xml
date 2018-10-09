@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/bdtours"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Splash_Activity">
@@ -20,14 +20,47 @@
         <activity android:name=".FirstPage" />
         <activity android:name=".ListActivityKhulna" />
         <activity android:name=".ListActivityDhaka" />
+        <activity android:name=".ListActivityBarisal" />
+        <activity android:name=".ListActivityRajshahi" />
+        <activity android:name=".ListActivityChittagong" />
+        <activity android:name=".ListActivityRangpur" />
         <activity android:name=".DetailsActivitySundarban" />
         <activity android:name=".DetailsActivityShatGombujMashjid" />
         <activity android:name=".DetailsActivityMujibNagor" />
         <activity android:name=".DetailsActivityLalon" />
+        <activity android:name=".DetailsActivityBaghamosjid" />
+        <activity android:name=".DetailsActivityDurgasagor" />
+        <activity android:name=".DetailsActivityGutiamosjid" />
+        <activity android:name=".DetailsActivityPuthiaRajbari" />
+        <activity android:name=".DetailsActivitySatla" />
         <activity android:name=".DetailsActivityAhsanMonjil" />
         <activity android:name=".DetailsActivityHosniDalan" />
         <activity android:name=".DetailsActivityLalbagKella" />
-        <activity android:name=".DetailsActivityKuthibari"></activity>
+        <activity android:name=".DetailsActivityKhoiyachora" />
+        <activity android:name=".DetailsActivityChandranath" />
+        <activity android:name=".DetailsActivityFoysLake" />
+        <activity android:name=".DetailsActivityBashbariya" />
+        <activity android:name=".DetailsActivityPotenga" />
+        <activity android:name=".DetailsActivityShitakundu" />
+        <activity android:name=".DetailsActivityBogalek" />
+        <activity android:name=".DetailsActivityNilachol" />
+        <activity android:name=".DetailsActivityKantojir" />
+        <activity android:name=".DetailsActivitySopnopuri" />
+        <activity android:name=".DetailsActivityTajhat" />
+        <activity android:name=".DetailsActivityKuthibari"/>
+        <activity android:name=".DetailsActivityNilgiri"/>
+        <activity android:name=".ListActivitySylhet"/>
+        <activity android:name=".DetailsActivityBisanakandi"/>
+        <activity android:name=".DetailsActivityJaflong"/>
+        <activity android:name=".DetailsActivityLalakhal"/>
+        <activity android:name=".DetailsActivityPanthumai"/>
+        <activity android:name=".DetailsActivityRatargul"/>
+        <activity android:name=".ListActivityMymensingh"/>
+        <activity android:name=".DetailsActivityBirishiri"/>
+        <activity android:name=".DetailsActivityGojni"/>
+        <activity android:name=".DetailsActivityModhutila">
+
+        </activity>
     </application>
 
 </manifest>

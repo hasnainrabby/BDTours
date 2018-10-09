@@ -44,7 +44,7 @@ public class DetailsActivitySundarban extends AppCompatActivity {
 
         TextView toolBarTitle;
         toolBarTitle = findViewById(R.id.toolBarTitle);
-        toolBarTitle.setText("---সুন্দরবন---");
+        toolBarTitle.setText("*** সুন্দরবন ***");
 
         //expandable intro read from text file
 

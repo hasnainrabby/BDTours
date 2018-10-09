@@ -40,7 +40,7 @@ public class DetailsActivityMujibNagor extends AppCompatActivity {
 
         TextView toolBarTitle;
         toolBarTitle = findViewById(R.id.toolBarTitle);
-        toolBarTitle.setText("---মুজিবনগর---");
+        toolBarTitle.setText("*** মুজিবনগর ***");
 
         //expandable intro read from text file
 
